@@ -125,7 +125,7 @@ path("ventures_edit",views.ventures_edit),
 path("newedi",views.Newedi),
 path("edi_edit",views.EDI_edit),
 path("event_form",views.event_form)
-]
+path("fishiries",views.fishiries)]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
