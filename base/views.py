@@ -580,3 +580,6 @@ def demoday_edit (request):
 
 def startupTN_edit (request):
     return render(request,"pages/startupTN_edit.html")
+
+def global_market_edit (request):
+    return render(request,"pages/global_market_edit.html")

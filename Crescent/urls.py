@@ -118,6 +118,7 @@ path("about_edit",views.about_edit),
 path("service_edit",views.service_edit),
 path("demo_edit",views.demoday_edit),
 path("startTN_edit",views.startupTN_edit),
+path("global_edit",views.global_market_edit),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,
