@@ -602,5 +602,6 @@ def EDI_edit(request):
 def event_form(request):
     return render(request,"events_form.html")
 
+
 def fishiries(request):
     return render(request,"newfishires.html")
