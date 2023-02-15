@@ -124,6 +124,7 @@ path("state_govt_fund_edit",views.state_govt_fund_edit),
 path("ventures_edit",views.ventures_edit),
 path("newedi",views.Newedi),
 path("edi_edit",views.EDI_edit),
+path("event_form",views.event_form)
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,

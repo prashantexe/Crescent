@@ -598,3 +598,6 @@ def Newedi(request):
 
 def EDI_edit(request):
     return render(request,"pages/edi_edit.html")
+
+def event_form(request):
+    return render(request,"events_form.html")
