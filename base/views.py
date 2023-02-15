@@ -574,3 +574,6 @@ def about_edit (request):
 
 def service_edit (request):
     return render(request,"pages/service_edit.html")
+
+def demoday_edit (request):
+    return render(request,"pages/demoday_edit.html")

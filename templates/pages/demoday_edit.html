@@ -323,7 +323,7 @@
 
       <!-- partial -->
       <div class="main-panel">        
-        < class="content-wrapper">
+        <div class="content-wrapper">
             <!-- slider section -->
             <div class="row">
                 <div class="col-md-12 grid-margin stretch-card">
@@ -338,13 +338,10 @@
                           <input type="text" class="form-control" placeholder="heading" id="heading" name="heading">
                         </div>
                         <div class="form-group">
-                          <label for="exampleInputEmail1">Sub-Heading</label>
-                          <input type="text" class="form-control" placeholder="sub_heading" id="sub_heading" name="sub_heading">
+                          <label for="exampleInputEmail1">Content</label>
+                          <input type="text" class="form-control" placeholder=" Content for demoday" id="Content" name="Content">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Top-Image</label>
-                            <input type="file" id="fileInput-single" class="form-control drop-zoon__file-input" accept="image/*" name="image_file" >
-                          </div>
+                       
                         <button id="btn" onclick="img_upload('upload_logo','#fileInput-single',['#reson'])" class="btn btn-primary mr-2">Submit</button>
                         <button class="btn btn-light">Cancel</button>
                       </form>
@@ -373,161 +370,95 @@
                     </div>
                 </section>
           </div>
-             <!-- second section -->
-             <div class="row">
-               <div class="col-md-12 grid-margin stretch-card">
-                 <div class="card">
-                   <div class="card-body">
-                     <h4 class="card-title">What we do - section</h4>
-                     <p class="card-description">
-                     Who are we - para section
-                     </p>
-                     <form class="forms-sample" enctype="multipart/form-data" method="post">
-                       {% csrf_token %}
-                       <div class="form-group">
-                           <label for="exampleInputEmail1">Sub heading</label>
-                           <input type="text" class="form-control" placeholder="Sub-heading" id="Sub-heading" name="Sub-heading">
-                         </div>
-                         <div class="form-group">
-                           <label for="exampleInputEmail1">Para below heading</label>
-                           <input type="text" class="form-control" placeholder="Point-1" id="Point-1" name="Point-1">
-                         </div>                    
-                         <div class="form-group">
-                           <label for="exampleInputEmail1">24/7 para</label>
-                           <input type="text" class="form-control" placeholder="Point-2" id="Point-2" name="Point-2">
-                         </div>                    
-                         <div class="form-group">
-                           <label for="exampleInputEmail1">Secure Payment para</label>
-                           <input type="text" class="form-control" placeholder="Point-3" id="Point-3" name="Point-3">
-                         </div>                    
-                       <div class="form-group">
-                         <label for="exampleInputEmail1">Daily Update para</label>
-                         <input type="text" class="form-control" placeholder="Point-4" id="Point-4" name="Point-4">
-                       </div>
-                       <div class="form-group">
-                         <label for="exampleInputEmail1">Market Research para</label>
-                         <input type="text" class="form-control" placeholder="Point-4" id="Point-4" name="Point-4">
-                       </div>
+
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pictures - Heading section </h4>
                   
-                       <button id="btn" onclick="upload()" class="btn btn-primary mr-2">Submit</button>
-                       <button class="btn btn-light">Cancel</button>
-                     </form>
-                   </div>
-                 </div>
-               </div>
-           
-               <!-- <section class="overflow-hidden text-gray-700 ">
-                   {% for i in team %}
-                       <div>
-                           <h1 style="margin-top: 20px; margin-bottom: 12px; font-weight: bold; font-size: 22px;">{{ i.0.categories }}</h1>
-                           <hr>
-                       </div>
-                       <div class="flex flex-wrap gap-4" style="display: flex;justify-content: center;align-items: center;align-content: center;flex-direction: row;">
-                           {% for j in i %}
-                               <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100" style="    width: 250px;">
-                                   <img src="{{ j.image.url }}" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
-                                   <div class="space-y-4 text-center divide-y divide-gray-700">
-                                       <div class="my-2 space-y-1">
-                                           <h2 class="text-xl font-semibold sm:text-2xl">{{ j.Name }}</h2>
-                                           <p class="px-5 text-xs sm:text-base dark:text-gray-400">{{ j.position }}</p>
-                                       </div>
-                                       <div class="flex justify-center pt-2 space-x-4 align-center">
-                                           <a rel="noopener noreferrer" onclick="del('{{ j.Team_id }}')" aria-label="delete" class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400">
-                                               <iconify-icon icon="material-symbols:delete-rounded" width="20" height="20"></iconify-icon>
-                                           </a>
-                                       </div>
-                                   </div>
-                               </div>
-                           {% endfor %}
-                       </div>
-                   {% endfor %}
-               </section> -->
-          
-         </div>
-
-<!-- embedded link -->
-
-<embed src="connect pannu ya" >
-  
+                  <form class="forms-sample" enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Heading</label>
+                      <input type="text" class="form-control" placeholder="heading" id="heading" name="heading">
+                    </div>
+                 
+                  
+                    <button id="btn" onclick="img_upload('upload_logo','#fileInput-single',['#reson'])" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
 
 
+        <!-- second section -->
+            <section class="overflow-hidden text-gray-700 ">
+                <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+                        <div class="flex flex-wrap -m-1 md:-m-2" style="    margin-top: 16px;">
+                          {% for j in logo_collection %}
+                              <div class="flex flex-wrap w-1/3">
+                                  <div class="w-full p-1 md:p-2">
+                                      <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"src="{{ j.image.url }}">
+                                  </div>
+                                  <div style="    display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: space-between; width: 100%; align-items: center;">
+                                    <button onclick="del('delete_logo','{{ j.L_id }}')" style="display: flex; flex-wrap: nowrap; flex-direction: row; align-content: center; justify-content: center; align-items: center;"><iconify-icon icon="ic:baseline-delete-forever" style="color: red;" width="20" height="20"></iconify-icon>
+                                    <h6>Delete</h6></button><button onclick="del('set_logo','{{ j.L_id }}')" style="display: flex; flex-wrap: nowrap; flex-direction: row; align-content: center; justify-content: center; align-items: center;"><iconify-icon icon="icon-park:difference-set" width="20" height="20"></iconify-icon>
+                                      <h6>set logo</h6></button>
+                                  </div>
+                                </div>
+                          {% endfor %}
+                        </div>
+                </div>
+            </section>
+      </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pictures section </h4>
+                  
+                  <form class="forms-sample" enctype="multipart/form-data" method="post">
+                    {% csrf_token %}
+                 
+                 
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Image</label>
+                        <input type="file" id="fileInput-single" class="form-control drop-zoon__file-input" accept="image/*" name="image_file" >
+                      </div>
+                    <button id="btn" onclick="img_upload('upload_logo','#fileInput-single',['#reson'])" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                  </form>
+                </div>
+              </div>
+            </div>
 
 
+        <!-- second section -->
+            <section class="overflow-hidden text-gray-700 ">
+                <div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+                        <div class="flex flex-wrap -m-1 md:-m-2" style="    margin-top: 16px;">
+                          {% for j in logo_collection %}
+                              <div class="flex flex-wrap w-1/3">
+                                  <div class="w-full p-1 md:p-2">
+                                      <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"src="{{ j.image.url }}">
+                                  </div>
+                                  <div style="    display: flex; flex-direction: row; flex-wrap: wrap; align-content: center; justify-content: space-between; width: 100%; align-items: center;">
+                                    <button onclick="del('delete_logo','{{ j.L_id }}')" style="display: flex; flex-wrap: nowrap; flex-direction: row; align-content: center; justify-content: center; align-items: center;"><iconify-icon icon="ic:baseline-delete-forever" style="color: red;" width="20" height="20"></iconify-icon>
+                                    <h6>Delete</h6></button><button onclick="del('set_logo','{{ j.L_id }}')" style="display: flex; flex-wrap: nowrap; flex-direction: row; align-content: center; justify-content: center; align-items: center;"><iconify-icon icon="icon-park:difference-set" width="20" height="20"></iconify-icon>
+                                      <h6>set logo</h6></button>
+                                  </div>
+                                </div>
+                          {% endfor %}
+                        </div>
+                </div>
+            </section>
+      </div>
+       
 
-
-
-
-
-
-
-
-
-
-
-<!-- embedded video dynamically -->
-
-             <div class="row">
-               <div class="col-md-12 grid-margin stretch-card">
-                 <div class="card">
-                   <div class="card-body">
-                     <h4 class="card-title">Our process - section</h4>
-                    
-                     <form class="forms-sample" enctype="multipart/form-data" method="post">
-                       {% csrf_token %}
-                       <div class="form-group">
-                           <label for="exampleInputEmail1">heading</label>
-                           <input type="text" class="form-control" placeholder="heading" id="sub_heading" name="sub_heading">
-                         </div>
-                         <div class="form-group">
-                           <label for="exampleInputEmail1">concept para</label>
-                           <input type="text" class="form-control" placeholder="para_1" id="para_1" name="para_1">
-                         </div>                    
-                         <div class="form-group">
-                           <label for="exampleInputEmail1">prepare para</label>
-                           <input type="text" class="form-control" placeholder="para_2" id="para_2" name="para_2">
-                         </div>       
-                         <div class="form-group">
-                            <label for="exampleInputEmail1">retouch para</label>
-                            <input type="text" class="form-control" placeholder="heading_1" id="heading_1" name="heading_1">
-                          </div>   
-                             
-                     
-                    
-                       <button id="btn" onclick="upload()" class="btn btn-primary mr-2">Submit</button>
-                       <button class="btn btn-light">Cancel</button>
-                     </form>
-                   </div>
-                 </div>
-               </div>
-           
-               <!-- <section class="overflow-hidden text-gray-700 ">
-                   {% for i in team %}
-                       <div>
-                           <h1 style="margin-top: 20px; margin-bottom: 12px; font-weight: bold; font-size: 22px;">{{ i.0.categories }}</h1>
-                           <hr>
-                       </div>
-                       <div class="flex flex-wrap gap-4" style="display: flex;justify-content: center;align-items: center;align-content: center;flex-direction: row;">
-                           {% for j in i %}
-                               <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100" style="    width: 250px;">
-                                   <img src="{{ j.image.url }}" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
-                                   <div class="space-y-4 text-center divide-y divide-gray-700">
-                                       <div class="my-2 space-y-1">
-                                           <h2 class="text-xl font-semibold sm:text-2xl">{{ j.Name }}</h2>
-                                           <p class="px-5 text-xs sm:text-base dark:text-gray-400">{{ j.position }}</p>
-                                       </div>
-                                       <div class="flex justify-center pt-2 space-x-4 align-center">
-                                           <a rel="noopener noreferrer" onclick="del('{{ j.Team_id }}')" aria-label="delete" class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400">
-                                               <iconify-icon icon="material-symbols:delete-rounded" width="20" height="20"></iconify-icon>
-                                           </a>
-                                       </div>
-                                   </div>
-                               </div>
-                           {% endfor %}
-                       </div>
-                   {% endfor %}
-               </section> -->
-          
-         </div>
+        
+             <!-- second section -->
             
              <!-- main-panel ends -->
              
@@ -537,142 +468,8 @@
 
              <!-- main-panel ends -->
     </div>
-    <div class="row">
-      <div class="col-md-12 grid-margin stretch-card">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Spending- section</h4>
-            <div class="form-group">
-              <label for="exampleInputEmail1">point 3</label>
-              <input type="text" class="form-control" placeholder="Point-4" id="Point-4" name="Point-4">
-            </div>
-            <form class="forms-sample" enctype="multipart/form-data" method="post">
-              {% csrf_token %}
-              <div class="form-group">
-                  <label for="exampleInputEmail1"> heading</label>
-                  <input type="text" class="form-control" placeholder="Sub-heading" id="Sub-heading" name="Sub-heading">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Para below heading</label>
-                  <input type="text" class="form-control" placeholder="Para_below_heading" id="Para_below_heading" name="Para_below_heading">
-                </div>                    
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Point-1</label>
-                  <input type="text" class="form-control" placeholder="Point-1" id="Point-1" name="Point-1">
-                </div>                    
-                <div class="form-group">
-                  <label for="exampleInputEmail1">point 2</label>
-                  <input type="text" class="form-control" placeholder="Point-2" id="Point-2" name="Point-2">
-                </div>        
-                <div class="form-group">
-                  <label for="exampleInputEmail1">point 3</label>
-                  <input type="text" class="form-control" placeholder="Point-3" id="Point-3" name="Point-2">
-                </div>            
-              <div class="form-group">
-                <label for="exampleInputEmail1">point-4</label>
-                <input type="text" class="form-control" placeholder="Point-4" id="Point-4" name="Point-4">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Image</label>
-                <input type="file" id="fileInput-single" class="form-control drop-zoon__file-input" accept="image/*" name="image_file" >
-              </div>
-         
-              <button id="btn" onclick="upload()" class="btn btn-primary mr-2">Submit</button>
-              <button class="btn btn-light">Cancel</button>
-            </form>
-          </div>
-        </div>
-      </div>
-  
-      <!-- <section class="overflow-hidden text-gray-700 ">
-          {% for i in team %}
-              <div>
-                  <h1 style="margin-top: 20px; margin-bottom: 12px; font-weight: bold; font-size: 22px;">{{ i.0.categories }}</h1>
-                  <hr>
-              </div>
-              <div class="flex flex-wrap gap-4" style="display: flex;justify-content: center;align-items: center;align-content: center;flex-direction: row;">
-                  {% for j in i %}
-                      <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100" style="    width: 250px;">
-                          <img src="{{ j.image.url }}" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
-                          <div class="space-y-4 text-center divide-y divide-gray-700">
-                              <div class="my-2 space-y-1">
-                                  <h2 class="text-xl font-semibold sm:text-2xl">{{ j.Name }}</h2>
-                                  <p class="px-5 text-xs sm:text-base dark:text-gray-400">{{ j.position }}</p>
-                              </div>
-                              <div class="flex justify-center pt-2 space-x-4 align-center">
-                                  <a rel="noopener noreferrer" onclick="del('{{ j.Team_id }}')" aria-label="delete" class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400">
-                                      <iconify-icon icon="material-symbols:delete-rounded" width="20" height="20"></iconify-icon>
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  {% endfor %}
-              </div>
-          {% endfor %}
-      </section> -->
  
-</div>
-<div class="row">
-  <div class="col-md-12 grid-margin stretch-card">
-    <div class="card">
-      <div class="card-body">
-        <h4 class="card-title">Join Our community - section</h4>
-       
-        <form class="forms-sample" enctype="multipart/form-data" method="post">
-          {% csrf_token %}
-          <div class="form-group">
-              <label for="exampleInputEmail1"> heading</label>
-              <input type="text" class="form-control" placeholder="Sub-heading" id="Sub-heading" name="Sub-heading">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Completed Projects</label>
-              <input type="text" class="form-control" placeholder="Completed_projects" id="Completed_projects" name="Completed_projects">
-            </div>                    
-            <div class="form-group">
-              <label for="exampleInputEmail1">Satisfied customers</label>
-              <input type="text" class="form-control" placeholder="Satisfied_customers" id="Satisfied_customers" name="Satisfied_customers">
-            </div>                    
-            <div class="form-group">
-              <label for="exampleInputEmail1">Expert Employees</label>
-              <input type="text" class="form-control" placeholder="Expert Employees" id="Expert_Employees" name="Expert_Employees">
-            </div>                    
-         
-     
-          <button id="btn" onclick="upload()" class="btn btn-primary mr-2">Submit</button>
-          <button class="btn btn-light">Cancel</button>
-        </form>
-      </div>
-    </div>
-  </div>
 
-  <!-- <section class="overflow-hidden text-gray-700 ">
-      {% for i in team %}
-          <div>
-              <h1 style="margin-top: 20px; margin-bottom: 12px; font-weight: bold; font-size: 22px;">{{ i.0.categories }}</h1>
-              <hr>
-          </div>
-          <div class="flex flex-wrap gap-4" style="display: flex;justify-content: center;align-items: center;align-content: center;flex-direction: row;">
-              {% for j in i %}
-                  <div class="flex flex-col justify-center max-w-xs p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-900 dark:text-gray-100" style="    width: 250px;">
-                      <img src="{{ j.image.url }}" alt="" class="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square">
-                      <div class="space-y-4 text-center divide-y divide-gray-700">
-                          <div class="my-2 space-y-1">
-                              <h2 class="text-xl font-semibold sm:text-2xl">{{ j.Name }}</h2>
-                              <p class="px-5 text-xs sm:text-base dark:text-gray-400">{{ j.position }}</p>
-                          </div>
-                          <div class="flex justify-center pt-2 space-x-4 align-center">
-                              <a rel="noopener noreferrer" onclick="del('{{ j.Team_id }}')" aria-label="delete" class="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-400">
-                                  <iconify-icon icon="material-symbols:delete-rounded" width="20" height="20"></iconify-icon>
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              {% endfor %}
-          </div>
-      {% endfor %}
-  </section> -->
-
-</div>
     <!-- page-body-wrapper ends -->
   </div>
   <script>
