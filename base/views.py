@@ -595,3 +595,6 @@ def ventures_edit(request):
 
 def Newedi(request):
     return render(request,"newedi.html")
+
+def EDI_edit(request):
+    return render(request,"pages/edi_edit.html")
