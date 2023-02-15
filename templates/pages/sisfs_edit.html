@@ -337,10 +337,8 @@
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Upload image</h4>
-                  <p class="card-description">
-                    Upload the images to Gallery
-                  </p>
+                  <h4 class="card-title">SISFS EDIT </h4>
+                 
                   <form class="forms-sample" enctype="multipart/form-data" method="post">
                     {% csrf_token %}
                     <div class="form-group">
@@ -355,23 +353,35 @@
                         <label for="exampleInputEmail1">Content</label>
                         <input type="text" class="form-control" placeholder="content" id="content" name="program">
                     </div>
-                        <div class="w-1/2">
-                          <label for="Tags" class="block mb-2 text-sm text-gray-600">Overview</label>
-                          <input
-                            type="text"
-                            class="w-full px-4 py-6 text-sm border border-gray-300 rounded outline-none"
-                            name="tags"
-                            value=" "
-                            autofocus
-                          />
-                        </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Top-Image</label>
+                      <input type="file" id="fileInput-single" class="form-control drop-zoon__file-input" accept="image/*" name="image_file" >
+                    </div>
+
+                    <p class="card-description">
+                    What we do
+                    </p>
+
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Point-1</label>
+                      <input type="text" class="form-control" placeholder="Point-1" id="Point_1" name="Point_1">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Point-2</label>
+                    <input type="text" class="form-control" placeholder="Point-2" id="Point_2" name="Point_2">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Point-3</label>
+                  <input type="text" class="form-control" placeholder="Point-3" id="Point_3" name="Point_3">
+              </div>
+                       
                     <button id="btn" onclick="img_upload('sisfs_save',['#title','#subtitle','#content'])" class="btn btn-primary mr-2">Submit</button>
                     <button class="btn btn-light">Cancel</button>
                   </form>
                 </div>
               </div>
             </div>
-        
+<!--         
             <section class="overflow-hidden text-gray-700 " style="display: flex;align-content: space-between;justify-content: space-between;align-items: center;flex-direction: row;flex-wrap: wrap;">
                 <div class="flex justify-center grid grid-cols-2">
                     {% for i,j in birac.items %}
@@ -394,8 +404,35 @@
                     </div>
                     {% endfor %}
                 </div>
-            </section>
+            </section> -->
       </div>
+      <div class="row">
+        <div class="col-md-12 grid-margin stretch-card">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">About SISFS</h4>
+            
+              <form class="forms-sample" enctype="multipart/form-data" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label for="exampleInputEmail1">No</label>
+                  <input type="text" class="form-control" placeholder="No" id="No" name="No">
+              </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Content</label>
+                    <input type="text" class="form-control" placeholder="Content" id="Content" topic="Content">
+                </div>
+               
+               
+                <button id="btn" onclick="img_upload('birac_save',['#title','#subtitle','#content'])" class="btn btn-primary mr-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+              </form>
+            </div>
+          </div>
+        </div>
+ 
+</div>
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
