@@ -577,3 +577,6 @@ def service_edit (request):
 
 def demoday_edit (request):
     return render(request,"pages/demoday_edit.html")
+
+def startupTN_edit (request):
+    return render(request,"pages/startupTN_edit.html")
