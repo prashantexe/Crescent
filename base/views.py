@@ -583,3 +583,6 @@ def startupTN_edit (request):
 
 def global_market_edit (request):
     return render(request,"pages/global_market_edit.html")
+
+def newstategovt (request):
+    return render(request,"newstategovtfund.html")
