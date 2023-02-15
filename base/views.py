@@ -586,3 +586,9 @@ def global_market_edit (request):
 
 def newstategovt (request):
     return render(request,"newstategovtfund.html")
+
+def state_govt_fund_edit(request):
+    return render(request,"pages/state_govt_fund_edit.html")
+
+def ventures_edit(request):
+    return render(request,"pages/ventures_edit.html")
