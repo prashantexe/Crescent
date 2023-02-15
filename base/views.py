@@ -592,3 +592,6 @@ def state_govt_fund_edit(request):
 
 def ventures_edit(request):
     return render(request,"pages/ventures_edit.html")
+
+def Newedi(request):
+    return render(request,"newedi.html")
