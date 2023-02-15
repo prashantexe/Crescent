@@ -571,3 +571,6 @@ def MBA_edit (request):
 
 def about_edit (request):
     return render(request,"pages/about.html")
+
+def service_edit (request):
+    return render(request,"pages/service_edit.html")
